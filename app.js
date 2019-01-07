@@ -13,10 +13,18 @@ var sbox = el("#sbox"),
     hmdt = el("#hmdt"),
     wnd = el("#wnd");
 
-
-sbut.onclick = function() {
+function sr(){
   let searchLink = "https://api.openweathermap.org/data/2.5/weather?q=" + sbox.value + "&appid="+APPKEY;
   httpRequestAsync(searchLink, theResponse);
+}
+sbox.addEventListener("keyup", enterPressed);
+function enterPressed(event) {
+  if (event.keyCode === 13){
+    sr();
+  }
+}
+sbut.onclick = function() {
+  sr();
 };
 
 function theResponse(response) {
