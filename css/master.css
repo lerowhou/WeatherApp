@@ -1,0 +1,50 @@
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background-color: #00b894;
+}
+
+.app .search {
+  margin-top: 15vh;
+  color: #dfe6e9;
+  text-align: center;
+}
+.app .search #sbox {
+  font-size: 1.5em;
+  min-width: 350px;
+  height: 75px;
+  text-align: center;
+  background-color: rgba(0, 184, 148, 0);
+  border: none;
+  border-bottom: white 3px solid;
+  color: #dfe6e9;
+}
+.app .search #sbut {
+  color: #dfe6e9;
+  margin-top: 15px;
+  background-color: rgba(0, 184, 148, 0);
+  width: 150px;
+  height: 75px;
+  border: 3px solid white;
+}
+.app .search #sbut:active {
+  background-color: rgba(223, 230, 233, 0.4);
+}
+.app .data {
+  text-align: center;
+}
+.app .lcn {
+  color: white;
+}
+.app .dbox {
+  color: #dfe6e9;
+  display: inline-block;
+  width: 150px;
+}
+.app .dbox .h1 {
+  font-size: 1.6em;
+}
+
+/*# sourceMappingURL=master.css.map */
