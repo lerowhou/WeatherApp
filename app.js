@@ -13,9 +13,9 @@ var sbox = el("#sbox"),
     hmdt = el("#hmdt"),
     wnd = el("#wnd");
 
-let searchLink = "https://api.openweathermap.org/data/2.5/weather?q=" + sbox.value + "&appid="+APPKEY;
 
 sbut.onclick = function() {
+  let searchLink = "https://api.openweathermap.org/data/2.5/weather?q=" + sbox.value + "&appid="+APPKEY;
   httpRequestAsync(searchLink, theResponse);
 };
 
